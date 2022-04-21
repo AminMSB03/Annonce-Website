@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="{{asset("css/app.css")}}">
     <title>Document</title>
 </head>
 <body>
@@ -38,6 +38,20 @@
         </div>
     </nav>
     @yield('content')
+
+<div class="footer-basic">
+    
+        <ul class="footer-list">
+            <li class="list-item"><a href="#">Home</a></li>
+            <li class="list-item"><a href="#">Services</a></li>
+            <li class="list-item"><a href="#">About</a></li>
+            <li class="list-item"><a href="#">Terms</a></li>
+            <li class="list-item"><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">Rekrute © 2022</p>
+        
+</div>
+
 <script src="js/main.js"></script>
 </body>
 </html>

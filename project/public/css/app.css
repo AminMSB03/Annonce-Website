@@ -303,6 +303,34 @@ input[name="img_url"]{
     box-sizing: border-box;
     padding-left: 10px;
     padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .plus{
+    width: 80%;
+    height: 50px;
+    display: inline-block;
+} */
+.header-container{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.edit{
+    width: 50%;
+    box-sizing: border-box;
+    padding-right:20px ;
+    display: flex;
+    justify-content: flex-end;
+}
+.edit a{
+    text-decoration: none;
+    color: #000;
+}
+.edit a:hover{
+    text-decoration: underline;
 }
 .img{
     width: 80%;
@@ -336,6 +364,18 @@ input[name="img_url"]{
     cursor: pointer;
     text-decoration: underline;
 }
+.update-form{
+    width: 70%;
+    /* background-color: cornflowerblue; */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 230px;
+}
+.update-form button{
+    margin-top: 10px;
+}
+
+
 
 @media screen and (max-width:832px) {
     nav{
@@ -410,10 +450,77 @@ input[name="img_url"]{
         width: 350px;
     }
     .annonces{
-        width: 82%;
+        width: 90%;
+    }
+
+    .publish-form{
+        width: 90%;
+        margin-top: 46px;   
+    }
+    #description{
+        width: 100%;
+        height: 119px;
+    }
+    .super-group {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 99%;
+    }
+    .super-group .input-group{
+        width: 200px;
+        margin-bottom: 7px;
+    }
+    .super-group input{
+        width: 284px;
     }
     
 }
 
 
 
+
+.footer-basic{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgba(241, 241, 241, 0.596);
+    height: 200px;    
+}
+.footer-list{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.footer-list a{
+    text-decoration: none;
+    color: #000;
+}
+.copyright{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.plus-annonces{
+    width: 40%;
+    /* background: crimson; */
+    height: 30px;
+    margin: auto;
+    margin-bottom: 25px;
+    border-bottom: 1px solid;
+}
+.plus-annonces ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    list-style: none;
+}
+.plus-annonces li a{
+    text-decoration: none;
+    color: #000;
+}

@@ -38,8 +38,12 @@ Route::get('/login',[LoginController::class, 'index'])->name('login');
 Route::post('/login',[LoginController::class, 'store']);
 
 Route::get('/Annonces',[AnnonceController::class, 'index'])->name('Annonces');
-Route::post('/Annonces',[AnnonceController::class, 'store'])->name('Annonces');
+Route::get('/Annonces/offer',[AnnonceController::class, 'offer'])->name('Annonces.offer');
+Route::get('/Annonces/request',[AnnonceController::class, 'request'])->name('Annonces.request');
+Route::post('/Annonces',[AnnonceController::class, 'store']);
 Route::delete('/Annonces/{annonce}',[AnnonceController::class, 'destroy'])->name('Annonces.destroy');
+Route::get('/Annonces/{annonce}',[AnnonceController::class, 'edit'])->name('Annnoces.edit');
+Route::put('/Annonces/{id}/update',[AnnonceController::class,'update'])->name('Annoce.update');
 
 
 

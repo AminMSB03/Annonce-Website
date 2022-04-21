@@ -19,4 +19,8 @@ class AnnoncePolicy
     {
         return $user->id === $Annonce->user_id;
     }
+    public function edit(User $user,Annonce $Annonce)
+    {
+        return $user->id === $Annonce->user_id;
+    }
 }
